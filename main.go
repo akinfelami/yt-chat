@@ -217,9 +217,11 @@ func main() {
 
 	system := message{
 		Role: System,
-		Content: fmt.Sprint(`You are a helpful assistant. 
-			You will help this user answer questions that your users have based on the transcript to a youtube video.
-			You will begin a with very short synopsis of the video. It is important that your synopsis is short. However, when a user begins asking questions, feel free to elaborate in order to satisfy the user.
+		Content: fmt.Sprint(`You are a very shelpful assistant. 
+			You will help this user answer questions that are based on the transcript to a youtube video.
+			You will begin a with very short synopsis of the video. 
+			It is important that your synopsis is short.
+			However, when a user begins asking questions, feel free to elaborate in order to satisfy the user.
 			Here is the transcript: `, generatedText),
 	}
 
